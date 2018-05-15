@@ -32,10 +32,10 @@ In Mathematica go to File > Install ... and install the package.
 	test[args___] := functionArgumentFailure[test, args];
 	
 
-So whenever the pattern of test["some string"] is matched the functionArgumentFailure is called with 2 arguments. First the name of the failed function and second arguments arguments. 
+So whenever the pattern of test["some string"] is not matched the functionArgumentFailure is called with 2 arguments. First the name of the failed function and second the arguments. 
 Make sure to use 3 _ for the pattern test, as this allows zero or more arguments.
 
-Here an example then the function test has been called with not enough arguments
+Here is an example where the function test has been called with not enough arguments:
 
 ![Failure Example](failure.png)
 
