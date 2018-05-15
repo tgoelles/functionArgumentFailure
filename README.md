@@ -6,7 +6,7 @@ A Mathematica package to handle errors when calling a function with wrong argume
 
 Thomas Gölles, [https://thomasgoelles.com](https://thomasgoelles.com)
 
-## Intro
+## Introduction
 
 
 The Wolfram Language is a bit special in the way it handles functions which have been called with wrong arguments. Most built-in functions will give a message and return unevaluated when the arguments are not correct.
@@ -37,11 +37,11 @@ Make sure to use 3 _ for the pattern test, as this allows zero or more arguments
 
 Here an example then the function test has been called with not enough arguments
 
-![Failure Example](/Users/Thomas/Documents/Wolfram Mathematica/functionArgumentFailure/failure.png)
+![Failure Example](failure.png)
 
 For further information see Examples.nb and the unit tests in tests/Test.nb
  
-##More Info:
+## More Info:
 
 [FailureQ documentation](http://reference.wolfram.com/language/ref/FailureQ.html)
 
