@@ -7,10 +7,9 @@
 BeginPackage["functionArgumentFailure`"];
 
   (* usages for public functions *)
-  resetFailurelist::usage = "reset the global failurelist";
   functionArgumentFailure::usage = "When argument patterns are not matched an Failure object is produced";
+  resetFailurelist::usage = "reset the global failurelist";
   setFailure::usage = "generates a Failure object and appends it to the failurelist";
-
 
 
 (* ::Chapter:: *)
@@ -25,67 +24,139 @@ BeginPackage["functionArgumentFailure`"];
 
 
   functionArgumentFailure[function_Symbol, args___] :=
-      Module[{length, expectednumberofnormalarguments, likelyreason = "unknown", argumentslist,  patterntests,
-        failedpos = Missing[], failedargument = Missing[], argumentnamelist, failure, messageid},
+      Module[{givennumberofarguments, expectednumberofarguments, argumentslist,  patterntests,
+          failure, failureinfo, failurebasicinfo},
 
         argumentslist = {args};
-
         patterntests = findPatternTests[function];
-        argumentnamelist = Flatten[StringTrim[#, (WhitespaceCharacter | "_")] & /@
-            StringCases[StringReplace[patterntests, {"(" -> "", ")" -> ""}], __ ~~ "_"]];
 
-        length = Length@argumentslist;
+        givennumberofarguments = Length[argumentslist];
+        expectednumberofarguments = Length[patterntests];
 
-        expectednumberofnormalarguments = Length@patterntests;
-
-        If[expectednumberofnormalarguments == length,
-
-          failedpos = Position[checkFunctionArgumentpattern /@ Thread[{argumentslist, patterntests}], False];
-
-          likelyreason = "argument(s) which failed the test: " <> Riffle[Extract[argumentnamelist, failedpos], ", "] ;
-          failedargument = Short[#, 3] & /@ Extract[argumentslist, failedpos];
-          messageid = 1;
-
+        If[expectednumberofarguments == givennumberofarguments,
+          failureinfo = wrongArgumentTypes[argumentslist, patterntests, function];
           ,
 
-          If[expectednumberofnormalarguments < length,
-            likelyreason = "too many arguments";
-
-            failedargument = argumentslist[[expectednumberofnormalarguments + 1 ;; -1]];
-            failedpos = Range[expectednumberofnormalarguments + 1, length];
-            messageid = 2;
+          If[expectednumberofarguments < givennumberofarguments,
+            failureinfo = tooManyArguments[argumentslist, patterntests, function];
             ,
-            likelyreason = "not enough arguments";
-            messageid = 3;
-
+            failureinfo = tooFewArguments[argumentslist, patterntests, function];
           ]
-
         ];
 
-        failure = setFailure[function, <|
-          "reason of failure" -> likelyreason,
-          "number of given arguments" -> length,
-          "expected number of arguments" -> expectednumberofnormalarguments,
+        failurebasicinfo = <|
+          "number of given arguments" -> givennumberofarguments,
+          "expected number of arguments" -> expectednumberofarguments,
           "Heads of given arguments" -> Head /@ argumentslist,
-          "Perfomed tests" -> patterntests,
-          "Position of failed argument(s)" -> failedpos,
-          "List of failed argument" -> failedargument|> ];
+          "Perfomed tests" -> patterntests|>;
 
-        Which[messageid == 1,
-          Message[functionArgumentFailure::wrongargs, function],
-          messageid == 2,
-          Message[functionArgumentFailure::tomanyargs, function],
-          messageid == 3,
-          Message[functionArgumentFailure::tolittleargs, function];
-        ];
-
+        failure = setFailure[function, Prepend[failureinfo, failurebasicinfo ] ];
         Return[failure]
 
       ];
-
   functionArgumentFailure::wrongargs = "in `1` :wrong arguments";
-  functionArgumentFailure::tomanyargs = "in `1` :too many arguments";
-  functionArgumentFailure::tolittleargs = "in `1` :not enough  arguments";
+  functionArgumentFailure::toomanyargs = "in `1` :too many arguments";
+  functionArgumentFailure::toofewargs = "in `1` :not enough  arguments";
+
+
+(* ::Subsection:: *)
+(*wrongArgumentTypes*)
+
+  wrongArgumentTypes[argumentslist_List, patterntests_List, function_Symbol] :=
+      Module[{failedpos, likelyreason, failedargument, messageid, argumentnamelist},
+
+        argumentnamelist = getArgumentnamelist[patterntests];
+
+        failedpos = getFailedPositionOfPatterntest[argumentslist, patterntests];
+        likelyreason = "argument(s) which failed the test: " <> Riffle[Extract[argumentnamelist, failedpos], ", "] ;
+        failedargument = Short[#, 3] & /@ Extract[argumentslist, failedpos];
+        Message[functionArgumentFailure::wrongargs, function];
+
+        Return[genFailureInfo[likelyreason, failedpos, failedargument]]
+
+      ]
+
+
+(* ::Subsection:: *)
+(*tooManyArguments*)
+
+  tooManyArguments[argumentslist_List, patterntests_List, function_Symbol] := Module[{failedpos, likelyreason,
+    failedargument, givennumberofarguments, expectednumberofarguments},
+
+    givennumberofarguments = Length[argumentslist];
+    expectednumberofarguments = Length[patterntests];
+
+    failedpos = Range[expectednumberofarguments + 1, givennumberofarguments];
+    likelyreason = "too many arguments";
+    failedargument = argumentslist[[expectednumberofarguments + 1 ;; -1]];
+    Message[functionArgumentFailure::toomanyargs, function];
+
+    Return[genFailureInfo[likelyreason, failedpos, failedargument]]
+  ]
+
+
+(* ::Subsection:: *)
+(*tooFewArguments*)
+
+  tooFewArguments[argumentslist_List, patterntests_List, function_Symbol] := Module[{failedpos, likelyreason,
+    failedargument},
+
+    failedpos = Missing[];
+    likelyreason = "not enough arguments";
+    failedargument = Missing[];
+    Message[functionArgumentFailure::toofewargs, function];
+
+    Return[genFailureInfo[likelyreason, failedpos, failedargument]]
+  ];
+
+
+(* ::Subsection:: *)
+(*genFailureInfo*)
+
+  genFailureInfo[likelyreason_, failedpos_, failedargument_ ] := <|"reason of failure"-> likelyreason,
+    "Position of failed argument(s)" -> failedpos, "List of failed argument(s)" -> failedargument|>
+
+
+(* ::Subsection:: *)
+(*getArgumentnamelist*)
+
+  getArgumentnamelist[patterntests_List] := Flatten[StringTrim[#, (WhitespaceCharacter | "_")] & /@
+      StringCases[StringReplace[patterntests, {"(" -> "", ")" -> ""}], __ ~~ "_"]]
+
+
+(* ::Subsection:: *)
+(*getFailedPositionOfPatterntest*)
+
+  getFailedPositionOfPatterntest[argumentslist_List, patterntests_List]:= Position[checkFunctionArgumentpattern /@
+      Thread[{argumentslist, patterntests}], False];
+
+(* ::Subsection:: *)
+(*checkFunctionArgumentpattern*)
+
+  (* Applying and check the pattern tests found with findPatternTests. *)
+  checkFunctionArgumentpattern[{argument_, test_String}] := MatchQ[argument, ToExpression[test]]
+
+
+(* ::Subsection:: *)
+(*findPatternTests*)
+
+
+  (* Returns the Pattern tests of the "function" as string used.*)
+  findPatternTests[function_Symbol] := Module[{patternsstringlist, functiondefinition, functiondefinitionlist,
+    patternsstringlistwithoutoptions, s},
+
+    functiondefinition = ToString[Definition[function]];
+    functiondefinitionlist = First@StringSplit[First[StringSplit[functiondefinition, "\n"]], ":="];
+
+    patternsstringlist =
+        StringSplit[StringDrop[StringDrop[First[StringCases[functiondefinitionlist, "[" ~~ Longest[__] ~~ "]"]],
+          {1}], {-1}], ","];
+
+    patternsstringlistwithoutoptions = DeleteCases[patternsstringlist,
+      s_String /; StringMatchQ[s, ___ ~~ "OptionsPattern[]" ~~ ___]];
+
+    Return[patternsstringlistwithoutoptions]
+  ];
 
 
 (* ::Subsection:: *)
@@ -108,38 +179,12 @@ BeginPackage["functionArgumentFailure`"];
 (* ::Subsection:: *)
 (*resetFailurlist*)
 
-
   resetFailurelist[] := Module[{}, Global`failurelist = {};];
-
-
-(* ::Subsection:: *)
-(*findPatternTests*)
-
-
-(* Returns the Pattern tests of the "function" as string used.*)
-  findPatternTests[function_Symbol] := Module[{patternsstringlist, test, test2},
-
-        test = ToString[Definition[function]];
-        test2 = First@StringSplit[First[StringSplit[test, "\n"]], ":="];
-        patternsstringlist =
-            StringSplit[StringDrop[StringDrop[First[StringCases[test2, "[" ~~ Longest[__] ~~ "]"]], {1}], {-1}], ","];
-        patternsstringlistwithoutoptions = DeleteCases[patternsstringlist,
-                s_String /; StringMatchQ[s, ___ ~~ "OptionsPattern[]" ~~ ___]];
-        Return[patternsstringlistwithoutoptions]
-      ];
-
-
-(* ::Subsection:: *)
-(*checkFunctionArgumentpattern*)
-
-
-  (* Applying and check the pattern tests found with findPatternTests. *)
-  checkFunctionArgumentpattern[{argument_, test_String}] := MatchQ[argument, ToExpression[test]]
 
 
 
 (* ::Chapter:: *)
-(*End of package\:201a*)
+(*End of package*)
 
 
 End[];
