@@ -4,7 +4,7 @@ A Mathematica package to handle errors when calling a function with wrong argume
 
 ## Authors
 
-Thomas Gölles, [https://thomasgoelles.com](https://thomasgoelles.com)
+Thomas Gölles, thomas.goelles@atseda.com
 
 ## Introduction
 
