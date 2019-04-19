@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     57174,       1311]
-NotebookOptionsPosition[     53509,       1237]
-NotebookOutlinePosition[     53861,       1253]
-CellTagsIndexPosition[     53818,       1250]
+NotebookDataLength[     55917,       1295]
+NotebookOptionsPosition[     52266,       1222]
+NotebookOutlinePosition[     52601,       1237]
+CellTagsIndexPosition[     52558,       1234]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -27,17 +27,18 @@ e823b9f3a4bb"],
 
 Cell["\<\
 make sure that the package is installed with Files > Install ...
-Otherwise you can also use Get for evatution\
+Otherwise you can also use Get for evaluation.\
 \>", "Text",
- CellChangeTimes->{{3.735369164021632*^9, 
-  3.735369227695242*^9}},ExpressionUUID->"e1909321-caa2-4723-8dc0-\
+ CellChangeTimes->{{3.735369164021632*^9, 3.735369227695242*^9}, {
+  3.7646477566097383`*^9, 
+  3.7646477621738863`*^9}},ExpressionUUID->"e1909321-caa2-4723-8dc0-\
 55d7a1b3bad1"],
 
 Cell[BoxData[
  RowBox[{"Needs", "[", "\"\<functionArgumentFailure`\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.7353689223603067`*^9, 3.735368965886696*^9}, {
   3.735369000752899*^9, 3.735369002932782*^9}},
- CellLabel->"In[5]:=",ExpressionUUID->"90f553de-8fbf-48e9-bf4f-5117913624b7"],
+ CellLabel->"In[60]:=",ExpressionUUID->"90f553de-8fbf-48e9-bf4f-5117913624b7"],
 
 Cell[CellGroupData[{
 
@@ -63,197 +64,8 @@ Cell[BoxData[{
     RowBox[{"test", ",", "args"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{"test", "[", "]"}]}], "Input",
  CellChangeTimes->{3.733042273763823*^9, 3.735359153649839*^9},
- CellLabel->"In[26]:=",
+ CellLabel->"In[61]:=",
  CellID->1155417659,ExpressionUUID->"43fa0004-f23d-4d02-8183-91fc65458458"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{
-   TagBox["Failure",
-    "SummaryHead"], "[", 
-   DynamicModuleBox[{Typeset`open$$ = True, Typeset`embedState$$ = "Ready"}, 
-    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
-            PaneBox[
-             ButtonBox[
-              DynamicBox[
-               FEPrivate`FrontEndResource[
-               "FEBitmaps", "SquarePlusIconMedium"]], 
-              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
-              Evaluator -> Automatic, Method -> "Preemptive"], 
-             Alignment -> {Center, Center}, ImageSize -> 
-             Dynamic[{
-               Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                AbsoluteCurrentValue[Magnification]}]], 
-            FrameBox[
-             StyleBox["\"\[WarningSign]\"", 
-              Directive["Message", 35], StripOnInput -> False], 
-             ContentPadding -> False, FrameStyle -> None, 
-             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
-            GridBox[{{
-               RowBox[{
-                 TagBox[
-                  
-                  TemplateBox[{"\"reason of failure\"", "\": \""}, 
-                   "RowDefault"], "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"not enough arguments\"", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  
-                  TemplateBox[{"\"number of given arguments\"", "\": \""}, 
-                   "RowDefault"], "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["0", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
-                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox["test", "SummaryItem"]}]}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}], True -> GridBox[{{
-            PaneBox[
-             ButtonBox[
-              DynamicBox[
-               FEPrivate`FrontEndResource[
-               "FEBitmaps", "SquareMinusIconMedium"]], 
-              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
-              Evaluator -> Automatic, Method -> "Preemptive"], 
-             Alignment -> {Center, Center}, ImageSize -> 
-             Dynamic[{
-               Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                AbsoluteCurrentValue[Magnification]}]], 
-            FrameBox[
-             StyleBox["\"\[WarningSign]\"", 
-              Directive["Message", 35], StripOnInput -> False], 
-             ContentPadding -> False, FrameStyle -> None, 
-             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
-            GridBox[{{
-               RowBox[{
-                 TagBox[
-                  
-                  TemplateBox[{"\"reason of failure\"", "\": \""}, 
-                   "RowDefault"], "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["\"not enough arguments\"", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  
-                  TemplateBox[{"\"number of given arguments\"", "\": \""}, 
-                   "RowDefault"], "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["0", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
-                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox["test", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  
-                  TemplateBox[{"\"expected number of arguments\"", "\": \""}, 
-                   "RowDefault"], "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox["1", "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  
-                  TemplateBox[{"\"Heads of given arguments\"", "\": \""}, 
-                   "RowDefault"], "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  RowBox[{"{", "}"}], "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  TemplateBox[{"\"Perfomed tests\"", "\": \""}, "RowDefault"],
-                   "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox[
-                  RowBox[{"{", "\"(a_)?StringQ\"", "}"}], "SummaryItem"]}]}, {
-              
-               RowBox[{
-                 TagBox[
-                  
-                  TemplateBox[{
-                   "\"Position of failed argument(s)\"", "\": \""}, 
-                   "RowDefault"], "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  RowBox[{"Missing", "[", "]"}], "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  
-                  TemplateBox[{"\"List of failed argument\"", "\": \""}, 
-                   "RowDefault"], "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                  RowBox[{"Missing", "[", "]"}], "SummaryItem"]}]}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}]}, 
-       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-     "SummaryPanel"],
-    DynamicModuleValues:>{}], "]"}],
-  Failure[$CellContext`test, 
-   Association[
-   "reason of failure" -> "not enough arguments", "number of given arguments" -> 
-    0, "expected number of arguments" -> 1, "Heads of given arguments" -> {}, 
-    "Perfomed tests" -> {"(a_)?StringQ"}, "Position of failed argument(s)" -> 
-    Missing[], "List of failed argument" -> Missing[]]],
-  Editable->False,
-  SelectWithContents->True,
-  Selectable->False]], "Output",
- CellChangeTimes->{3.733042274260289*^9, 3.733042322574787*^9, 
-  3.733042373427869*^9, 3.7330456017026577`*^9, 3.733047612292582*^9, 
-  3.733047683308951*^9, 3.733048480786903*^9, 3.7353600040654783`*^9, 
-  3.73536027484272*^9, 3.7353603285631657`*^9, 3.73536921637819*^9, 
-  3.735369516429995*^9},
- CellLabel->"Out[29]=",ExpressionUUID->"043377ad-37f5-4e62-97b0-0aeade460254"]
-}, Open  ]]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["A function is called with wrong type", "Subsection",
- CellChangeTimes->{{3.7353605495447683`*^9, 
-  3.735360596420682*^9}},ExpressionUUID->"57a38f7e-83b7-4221-baaf-\
-5453355b7698"],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"ClearAll", "[", "test", "]"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"test", "[", 
-    RowBox[{"a_", "?", "StringQ"}], "]"}], ":=", "1"}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{
-   RowBox[{"test", "[", "args___", "]"}], ":=", 
-   RowBox[{"functionArgumentFailure", "[", 
-    RowBox[{"test", ",", "args"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{"test", "[", "2", "]"}]}], "Input",
- CellChangeTimes->{{3.735360574381968*^9, 3.735360576384473*^9}},
- CellLabel->"In[10]:=",ExpressionUUID->"de05e7ac-2cd5-4232-afcb-d02c3ba0e2db"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -283,24 +95,25 @@ Cell[BoxData[
                RowBox[{
                  TagBox[
                   
-                  TemplateBox[{"\"reason of failure\"", "\": \""}, 
-                   "RowDefault"], "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                 "\"argument(s) which failed the test: a\"", 
-                  "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  
                   TemplateBox[{"\"number of given arguments\"", "\": \""}, 
                    "RowDefault"], "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["1", "SummaryItem"]}]}, {
+                 TagBox[
+                  TagBox["0", HoldForm], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  
+                  TemplateBox[{"\"expected number of arguments\"", "\": \""}, 
+                   "RowDefault"], "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox["1", HoldForm], "SummaryItem"]}]}, {
                RowBox[{
                  TagBox[
                   TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
                   "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox["test", "SummaryItem"]}]}}, 
+                 TagBox[
+                  TagBox["test", HoldForm], "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -333,31 +146,25 @@ Cell[BoxData[
                RowBox[{
                  TagBox[
                   
-                  TemplateBox[{"\"reason of failure\"", "\": \""}, 
-                   "RowDefault"], "SummaryItemAnnotation"], 
-                 "\[InvisibleSpace]", 
-                 TagBox[
-                 "\"argument(s) which failed the test: a\"", 
-                  "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  
                   TemplateBox[{"\"number of given arguments\"", "\": \""}, 
                    "RowDefault"], "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["1", "SummaryItem"]}]}, {
-               RowBox[{
                  TagBox[
-                  TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
-                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox["test", "SummaryItem"]}]}, {
+                  TagBox["0", HoldForm], "SummaryItem"]}]}, {
                RowBox[{
                  TagBox[
                   
                   TemplateBox[{"\"expected number of arguments\"", "\": \""}, 
                    "RowDefault"], "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
-                 TagBox["1", "SummaryItem"]}]}, {
+                 TagBox[
+                  TagBox["1", HoldForm], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox["test", HoldForm], "SummaryItem"]}]}, {
                RowBox[{
                  TagBox[
                   
@@ -365,14 +172,25 @@ Cell[BoxData[
                    "RowDefault"], "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
                  TagBox[
-                  RowBox[{"{", "Integer", "}"}], "SummaryItem"]}]}, {
+                  TagBox[
+                   RowBox[{"{", "}"}], HoldForm], "SummaryItem"]}]}, {
                RowBox[{
                  TagBox[
                   TemplateBox[{"\"Perfomed tests\"", "\": \""}, "RowDefault"],
                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
                  TagBox[
-                  RowBox[{"{", "\"(a_)?StringQ\"", "}"}], "SummaryItem"]}]}, {
-              
+                  TagBox[
+                   RowBox[{"{", "\"(a_)?StringQ\"", "}"}], HoldForm], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  
+                  TemplateBox[{"\"reason of failure\"", "\": \""}, 
+                   "RowDefault"], "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox["\"not enough arguments\"", HoldForm], 
+                  "SummaryItem"]}]}, {
                RowBox[{
                  TagBox[
                   
@@ -381,17 +199,19 @@ Cell[BoxData[
                    "RowDefault"], "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
                  TagBox[
-                  RowBox[{"{", 
-                    RowBox[{"{", "1", "}"}], "}"}], "SummaryItem"]}]}, {
+                  TagBox[
+                   RowBox[{"Missing", "[", "]"}], HoldForm], 
+                  "SummaryItem"]}]}, {
                RowBox[{
                  TagBox[
                   
-                  TemplateBox[{"\"List of failed argument\"", "\": \""}, 
+                  TemplateBox[{"\"List of failed argument(s)\"", "\": \""}, 
                    "RowDefault"], "SummaryItemAnnotation"], 
                  "\[InvisibleSpace]", 
                  TagBox[
-                  RowBox[{"{", 
-                    TagBox["2", Short[#, 3]& ], "}"}], "SummaryItem"]}]}}, 
+                  TagBox[
+                   RowBox[{"Missing", "[", "]"}], HoldForm], 
+                  "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -409,17 +229,227 @@ Cell[BoxData[
     DynamicModuleValues:>{}], "]"}],
   Failure[$CellContext`test, 
    Association[
-   "reason of failure" -> "argument(s) which failed the test: a", 
-    "number of given arguments" -> 1, "expected number of arguments" -> 1, 
+   "number of given arguments" -> 0, "expected number of arguments" -> 1, 
+    "Heads of given arguments" -> {}, "Perfomed tests" -> {"(a_)?StringQ"}, 
+    "reason of failure" -> "not enough arguments", 
+    "Position of failed argument(s)" -> Missing[], 
+    "List of failed argument(s)" -> Missing[]]],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->False]], "Output",
+ CellChangeTimes->{3.733042274260289*^9, 3.733042322574787*^9, 
+  3.733042373427869*^9, 3.7330456017026577`*^9, 3.733047612292582*^9, 
+  3.733047683308951*^9, 3.733048480786903*^9, 3.7353600040654783`*^9, 
+  3.73536027484272*^9, 3.7353603285631657`*^9, 3.73536921637819*^9, 
+  3.735369516429995*^9, 3.7353807160422907`*^9, 3.7646477225165586`*^9},
+ CellLabel->"Out[64]=",ExpressionUUID->"cbfac78b-bc21-4394-9e0b-a340e86ddee7"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["A function is called with wrong type", "Subsection",
+ CellChangeTimes->{{3.7353605495447683`*^9, 
+  3.735360596420682*^9}},ExpressionUUID->"57a38f7e-83b7-4221-baaf-\
+5453355b7698"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"ClearAll", "[", "test", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"test", "[", 
+    RowBox[{"a_", "?", "StringQ"}], "]"}], ":=", "1"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"test", "[", "args___", "]"}], ":=", 
+   RowBox[{"functionArgumentFailure", "[", 
+    RowBox[{"test", ",", "args"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"test", "[", "2", "]"}]}], "Input",
+ CellChangeTimes->{{3.735360574381968*^9, 3.735360576384473*^9}},
+ CellLabel->"In[65]:=",ExpressionUUID->"de05e7ac-2cd5-4232-afcb-d02c3ba0e2db"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   TagBox["Failure",
+    "SummaryHead"], "[", 
+   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+    
+    TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquarePlusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               RowBox[{
+                 TagBox[
+                  
+                  TemplateBox[{"\"number of given arguments\"", "\": \""}, 
+                   "RowDefault"], "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox["1", HoldForm], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  
+                  TemplateBox[{"\"expected number of arguments\"", "\": \""}, 
+                   "RowDefault"], "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox["1", HoldForm], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox["test", HoldForm], "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}], True -> GridBox[{{
+            PaneBox[
+             ButtonBox[
+              DynamicBox[
+               FEPrivate`FrontEndResource[
+               "FEBitmaps", "SquareMinusIconMedium"]], 
+              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
+              Evaluator -> Automatic, Method -> "Preemptive"], 
+             Alignment -> {Center, Center}, ImageSize -> 
+             Dynamic[{
+               Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                AbsoluteCurrentValue[Magnification]}]], 
+            FrameBox[
+             StyleBox["\"\[WarningSign]\"", 
+              Directive["Message", 35], StripOnInput -> False], 
+             ContentPadding -> False, FrameStyle -> None, 
+             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+            GridBox[{{
+               RowBox[{
+                 TagBox[
+                  
+                  TemplateBox[{"\"number of given arguments\"", "\": \""}, 
+                   "RowDefault"], "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox["1", HoldForm], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  
+                  TemplateBox[{"\"expected number of arguments\"", "\": \""}, 
+                   "RowDefault"], "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox["1", HoldForm], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
+                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox["test", HoldForm], "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  
+                  TemplateBox[{"\"Heads of given arguments\"", "\": \""}, 
+                   "RowDefault"], "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"{", "Integer", "}"}], HoldForm], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  TemplateBox[{"\"Perfomed tests\"", "\": \""}, "RowDefault"],
+                   "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"{", "\"(a_)?StringQ\"", "}"}], HoldForm], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  
+                  TemplateBox[{"\"reason of failure\"", "\": \""}, 
+                   "RowDefault"], "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                  "\"argument(s) which failed the test: a\"", HoldForm], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  
+                  TemplateBox[{
+                   "\"Position of failed argument(s)\"", "\": \""}, 
+                   "RowDefault"], "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"{", 
+                    RowBox[{"{", "1", "}"}], "}"}], HoldForm], 
+                  "SummaryItem"]}]}, {
+               RowBox[{
+                 TagBox[
+                  
+                  TemplateBox[{"\"List of failed argument(s)\"", "\": \""}, 
+                   "RowDefault"], "SummaryItemAnnotation"], 
+                 "\[InvisibleSpace]", 
+                 TagBox[
+                  TagBox[
+                   RowBox[{"{", 
+                    TagBox["2", Short[#, 3]& ], "}"}], HoldForm], 
+                  "SummaryItem"]}]}}, 
+             GridBoxAlignment -> {
+              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+             False, GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
+              BaseStyle -> {
+              ShowStringCharacters -> False, NumberMarks -> False, 
+               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+          GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+          GridBoxItemSize -> {
+           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+          BaselinePosition -> {1, 1}]}, 
+       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+     "SummaryPanel"],
+    DynamicModuleValues:>{}], "]"}],
+  Failure[$CellContext`test, 
+   Association[
+   "number of given arguments" -> 1, "expected number of arguments" -> 1, 
     "Heads of given arguments" -> {Integer}, 
-    "Perfomed tests" -> {"(a_)?StringQ"}, 
-    "Position of failed argument(s)" -> {{1}}, "List of failed argument" -> {
+    "Perfomed tests" -> {"(a_)?StringQ"}, "reason of failure" -> 
+    "argument(s) which failed the test: a", 
+    "Position of failed argument(s)" -> {{1}}, "List of failed argument(s)" -> {
       Short[2, 3]}]],
   Editable->False,
   SelectWithContents->True,
   Selectable->False]], "Output",
- CellChangeTimes->{3.7353605779082108`*^9, 3.7353692164626017`*^9},
- CellLabel->"Out[13]=",ExpressionUUID->"d111d64e-52cd-452a-8473-160dee9460ff"]
+ CellChangeTimes->{3.7353605779082108`*^9, 3.7353692164626017`*^9, 
+  3.7353807161275682`*^9, 3.7646477225423822`*^9},
+ CellLabel->"Out[68]=",ExpressionUUID->"44c26625-113a-4507-a856-3a4817eb3a10"]
 }, Open  ]]
 }, Open  ]],
 
@@ -453,12 +483,13 @@ Cell[BoxData[{
  RowBox[{"test", "[", "\"\<aaa\>\"", "]"}]}], "Input",
  CellChangeTimes->{{3.735360574381968*^9, 3.735360576384473*^9}, {
   3.7353606186519327`*^9, 3.735360620641848*^9}},
- CellLabel->"In[22]:=",ExpressionUUID->"df2ea9b8-f91c-4a74-b53d-b934628829d8"],
+ CellLabel->"In[69]:=",ExpressionUUID->"df2ea9b8-f91c-4a74-b53d-b934628829d8"],
 
 Cell[BoxData["1"], "Output",
  CellChangeTimes->{3.7353605779082108`*^9, 3.735360621130114*^9, 
-  3.735369216526596*^9, 3.7353695071387453`*^9},
- CellLabel->"Out[25]=",ExpressionUUID->"8928a246-43b5-4b46-999b-b15b3c971c1c"]
+  3.735369216526596*^9, 3.7353695071387453`*^9, 3.735380716181425*^9, 
+  3.764647722592494*^9},
+ CellLabel->"Out[72]=",ExpressionUUID->"791491a1-0641-431d-844e-3e29f10bd313"]
 }, Open  ]]
 }, Open  ]],
 
@@ -482,7 +513,7 @@ Cell[CellGroupData[{
 
 Cell[BoxData["failurelist"], "Input",
  CellChangeTimes->{{3.7353606651254396`*^9, 3.735360666252955*^9}},
- CellLabel->"In[18]:=",ExpressionUUID->"bad1ed76-07f5-42cd-9b9b-60d77c9656f8"],
+ CellLabel->"In[73]:=",ExpressionUUID->"bad1ed76-07f5-42cd-9b9b-60d77c9656f8"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -494,17 +525,6 @@ Cell[BoxData[
      DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
       "Ready"}, 
       TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
-              PaneBox[
-               ButtonBox[
-                DynamicBox[
-                 FEPrivate`FrontEndResource[
-                 "FEBitmaps", "SquarePlusIconMedium"]], 
-                ButtonFunction :> (Typeset`open$$ = True), Appearance -> None,
-                 Evaluator -> Automatic, Method -> "Preemptive"], 
-               Alignment -> {Center, Center}, ImageSize -> 
-               Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
               FrameBox[
                StyleBox["\"\[WarningSign]\"", 
                 Directive["Message", 35], StripOnInput -> False], 
@@ -513,23 +533,16 @@ Cell[BoxData[
               GridBox[{{
                  RowBox[{
                    TagBox[
-                    
-                    TemplateBox[{"\"reason of failure\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["\"not enough arguments\"", "SummaryItem"]}]}, {
-                 RowBox[{
+                    TemplateBox[{"\"a\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
                    TagBox[
-                    
-                    TemplateBox[{"\"number of given arguments\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["0", "SummaryItem"]}]}, {
+                    TagBox["1", HoldForm], "SummaryItem"]}]}, {
                  RowBox[{
                    TagBox[
                     TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                   TagBox["test", "SummaryItem"]}]}}, 
+                   TagBox[
+                    TagBox["test", HoldForm], "SummaryItem"]}]}}, 
                GridBoxAlignment -> {
                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
                False, GridBoxItemSize -> {
@@ -543,17 +556,6 @@ Cell[BoxData[
             GridBoxItemSize -> {
              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
             BaselinePosition -> {1, 1}], True -> GridBox[{{
-              PaneBox[
-               ButtonBox[
-                DynamicBox[
-                 FEPrivate`FrontEndResource[
-                 "FEBitmaps", "SquareMinusIconMedium"]], 
-                ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
-                None, Evaluator -> Automatic, Method -> "Preemptive"], 
-               Alignment -> {Center, Center}, ImageSize -> 
-               Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
               FrameBox[
                StyleBox["\"\[WarningSign]\"", 
                 Directive["Message", 35], StripOnInput -> False], 
@@ -562,65 +564,16 @@ Cell[BoxData[
               GridBox[{{
                  RowBox[{
                    TagBox[
-                    
-                    TemplateBox[{"\"reason of failure\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["\"not enough arguments\"", "SummaryItem"]}]}, {
-                 RowBox[{
+                    TemplateBox[{"\"a\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
                    TagBox[
-                    
-                    TemplateBox[{"\"number of given arguments\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["0", "SummaryItem"]}]}, {
+                    TagBox["1", HoldForm], "SummaryItem"]}]}, {
                  RowBox[{
                    TagBox[
                     TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                   TagBox["test", "SummaryItem"]}]}, {
-                 RowBox[{
                    TagBox[
-                    
-                    TemplateBox[{
-                    "\"expected number of arguments\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["1", "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    
-                    TemplateBox[{"\"Heads of given arguments\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                    RowBox[{"{", "}"}], "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    
-                    TemplateBox[{"\"Perfomed tests\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                    RowBox[{"{", "\"(a_)?StringQ\"", "}"}], 
-                    "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    
-                    TemplateBox[{
-                    "\"Position of failed argument(s)\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                    RowBox[{"Missing", "[", "]"}], "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    
-                    TemplateBox[{"\"List of failed argument\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                    RowBox[{"Missing", "[", "]"}], "SummaryItem"]}]}}, 
+                    TagBox["test", HoldForm], "SummaryItem"]}]}}, 
                GridBoxAlignment -> {
                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
                False, GridBoxItemSize -> {
@@ -638,12 +591,7 @@ Cell[BoxData[
        "SummaryPanel"],
       DynamicModuleValues:>{}], "]"}],
     Failure[$CellContext`test, 
-     Association[
-     "reason of failure" -> "not enough arguments", 
-      "number of given arguments" -> 0, "expected number of arguments" -> 1, 
-      "Heads of given arguments" -> {}, "Perfomed tests" -> {"(a_)?StringQ"}, 
-      "Position of failed argument(s)" -> Missing[], 
-      "List of failed argument" -> Missing[]]],
+     Association["a" -> 1]],
     Editable->False,
     SelectWithContents->True,
     Selectable->False], ",", 
@@ -674,24 +622,26 @@ Cell[BoxData[
                  RowBox[{
                    TagBox[
                     
-                    TemplateBox[{"\"reason of failure\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                   "\"argument(s) which failed the test: a\"", 
-                    "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    
                     TemplateBox[{"\"number of given arguments\"", "\": \""}, 
                     "RowDefault"], "SummaryItemAnnotation"], 
                    "\[InvisibleSpace]", 
-                   TagBox["1", "SummaryItem"]}]}, {
+                   TagBox[
+                    TagBox["0", HoldForm], "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox[
+                    
+                    TemplateBox[{
+                    "\"expected number of arguments\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox["1", HoldForm], "SummaryItem"]}]}, {
                  RowBox[{
                    TagBox[
                     TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
                     "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                   TagBox["test", "SummaryItem"]}]}}, 
+                   TagBox[
+                    TagBox["test", HoldForm], "SummaryItem"]}]}}, 
                GridBoxAlignment -> {
                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
                False, GridBoxItemSize -> {
@@ -725,24 +675,11 @@ Cell[BoxData[
                  RowBox[{
                    TagBox[
                     
-                    TemplateBox[{"\"reason of failure\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                   "\"argument(s) which failed the test: a\"", 
-                    "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    
                     TemplateBox[{"\"number of given arguments\"", "\": \""}, 
                     "RowDefault"], "SummaryItemAnnotation"], 
                    "\[InvisibleSpace]", 
-                   TagBox["1", "SummaryItem"]}]}, {
-                 RowBox[{
                    TagBox[
-                    TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                   TagBox["test", "SummaryItem"]}]}, {
+                    TagBox["0", HoldForm], "SummaryItem"]}]}, {
                  RowBox[{
                    TagBox[
                     
@@ -750,7 +687,14 @@ Cell[BoxData[
                     "\"expected number of arguments\"", "\": \""}, 
                     "RowDefault"], "SummaryItemAnnotation"], 
                    "\[InvisibleSpace]", 
-                   TagBox["1", "SummaryItem"]}]}, {
+                   TagBox[
+                    TagBox["1", HoldForm], "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox[
+                    TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox["test", HoldForm], "SummaryItem"]}]}, {
                  RowBox[{
                    TagBox[
                     
@@ -758,7 +702,8 @@ Cell[BoxData[
                     "RowDefault"], "SummaryItemAnnotation"], 
                    "\[InvisibleSpace]", 
                    TagBox[
-                    RowBox[{"{", "Integer", "}"}], "SummaryItem"]}]}, {
+                    TagBox[
+                    RowBox[{"{", "}"}], HoldForm], "SummaryItem"]}]}, {
                  RowBox[{
                    TagBox[
                     
@@ -766,7 +711,17 @@ Cell[BoxData[
                     "RowDefault"], "SummaryItemAnnotation"], 
                    "\[InvisibleSpace]", 
                    TagBox[
-                    RowBox[{"{", "\"(a_)?StringQ\"", "}"}], 
+                    TagBox[
+                    RowBox[{"{", "\"(a_)?StringQ\"", "}"}], HoldForm], 
+                    "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox[
+                    
+                    TemplateBox[{"\"reason of failure\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox["\"not enough arguments\"", HoldForm], 
                     "SummaryItem"]}]}, {
                  RowBox[{
                    TagBox[
@@ -776,21 +731,22 @@ Cell[BoxData[
                     "RowDefault"], "SummaryItemAnnotation"], 
                    "\[InvisibleSpace]", 
                    TagBox[
-                    RowBox[{"{", 
-                    RowBox[{"{", "1", "}"}], "}"}], "SummaryItem"]}]}, {
+                    TagBox[
+                    RowBox[{"Missing", "[", "]"}], HoldForm], 
+                    "SummaryItem"]}]}, {
                  RowBox[{
                    TagBox[
                     
-                    TemplateBox[{"\"List of failed argument\"", "\": \""}, 
+                    TemplateBox[{"\"List of failed argument(s)\"", "\": \""}, 
                     "RowDefault"], "SummaryItemAnnotation"], 
                    "\[InvisibleSpace]", 
                    TagBox[
-                    RowBox[{"{", 
-                    TagBox["2", Short[#, 3]& ], "}"}], "SummaryItem"]}]}}, 
+                    TagBox[
+                    RowBox[{"Missing", "[", "]"}], HoldForm], 
+                    "SummaryItem"]}]}}, 
                GridBoxAlignment -> {
                 "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-               False, 
-               GridBoxItemSize -> {
+               False, GridBoxItemSize -> {
                 "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
                GridBoxSpacings -> {
                 "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
@@ -806,17 +762,197 @@ Cell[BoxData[
       DynamicModuleValues:>{}], "]"}],
     Failure[$CellContext`test, 
      Association[
-     "reason of failure" -> "argument(s) which failed the test: a", 
-      "number of given arguments" -> 1, "expected number of arguments" -> 1, 
+     "number of given arguments" -> 0, "expected number of arguments" -> 1, 
+      "Heads of given arguments" -> {}, "Perfomed tests" -> {"(a_)?StringQ"}, 
+      "reason of failure" -> "not enough arguments", 
+      "Position of failed argument(s)" -> Missing[], 
+      "List of failed argument(s)" -> Missing[]]],
+    Editable->False,
+    SelectWithContents->True,
+    Selectable->False], ",", 
+   InterpretationBox[
+    RowBox[{
+     TagBox["Failure",
+      "SummaryHead"], "[", 
+     DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
+      "Ready"}, 
+      TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+              PaneBox[
+               ButtonBox[
+                DynamicBox[
+                 FEPrivate`FrontEndResource[
+                 "FEBitmaps", "SquarePlusIconMedium"]], 
+                ButtonFunction :> (Typeset`open$$ = True), Appearance -> None,
+                 Evaluator -> Automatic, Method -> "Preemptive"], 
+               Alignment -> {Center, Center}, ImageSize -> 
+               Dynamic[{
+                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                  AbsoluteCurrentValue[Magnification]}]], 
+              FrameBox[
+               StyleBox["\"\[WarningSign]\"", 
+                Directive["Message", 35], StripOnInput -> False], 
+               ContentPadding -> False, FrameStyle -> None, 
+               FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+              GridBox[{{
+                 RowBox[{
+                   TagBox[
+                    
+                    TemplateBox[{"\"number of given arguments\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox["1", HoldForm], "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox[
+                    
+                    TemplateBox[{
+                    "\"expected number of arguments\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox["1", HoldForm], "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox[
+                    TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox["test", HoldForm], "SummaryItem"]}]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}], True -> GridBox[{{
+              PaneBox[
+               ButtonBox[
+                DynamicBox[
+                 FEPrivate`FrontEndResource[
+                 "FEBitmaps", "SquareMinusIconMedium"]], 
+                ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                None, Evaluator -> Automatic, Method -> "Preemptive"], 
+               Alignment -> {Center, Center}, ImageSize -> 
+               Dynamic[{
+                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                  AbsoluteCurrentValue[Magnification]}]], 
+              FrameBox[
+               StyleBox["\"\[WarningSign]\"", 
+                Directive["Message", 35], StripOnInput -> False], 
+               ContentPadding -> False, FrameStyle -> None, 
+               FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+              GridBox[{{
+                 RowBox[{
+                   TagBox[
+                    
+                    TemplateBox[{"\"number of given arguments\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox["1", HoldForm], "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox[
+                    
+                    TemplateBox[{
+                    "\"expected number of arguments\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox["1", HoldForm], "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox[
+                    TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
+                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox["test", HoldForm], "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox[
+                    
+                    TemplateBox[{"\"Heads of given arguments\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox[
+                    RowBox[{"{", "Integer", "}"}], HoldForm], 
+                    "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox[
+                    
+                    TemplateBox[{"\"Perfomed tests\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox[
+                    RowBox[{"{", "\"(a_)?StringQ\"", "}"}], HoldForm], 
+                    "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox[
+                    
+                    TemplateBox[{"\"reason of failure\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox[
+                    "\"argument(s) which failed the test: a\"", HoldForm], 
+                    "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox[
+                    
+                    TemplateBox[{
+                    "\"Position of failed argument(s)\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox[
+                    RowBox[{"{", 
+                    RowBox[{"{", "1", "}"}], "}"}], HoldForm], 
+                    "SummaryItem"]}]}, {
+                 RowBox[{
+                   TagBox[
+                    
+                    TemplateBox[{"\"List of failed argument(s)\"", "\": \""}, 
+                    "RowDefault"], "SummaryItemAnnotation"], 
+                   "\[InvisibleSpace]", 
+                   TagBox[
+                    TagBox[
+                    RowBox[{"{", 
+                    TagBox["2", Short[#, 3]& ], "}"}], HoldForm], 
+                    "SummaryItem"]}]}}, 
+               GridBoxAlignment -> {
+                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+               False, GridBoxItemSize -> {
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+               GridBoxSpacings -> {
+                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+               BaseStyle -> {
+                ShowStringCharacters -> False, NumberMarks -> False, 
+                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+            GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+            GridBoxItemSize -> {
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+            BaselinePosition -> {1, 1}]}, 
+         Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+       "SummaryPanel"],
+      DynamicModuleValues:>{}], "]"}],
+    Failure[$CellContext`test, 
+     Association[
+     "number of given arguments" -> 1, "expected number of arguments" -> 1, 
       "Heads of given arguments" -> {Integer}, 
-      "Perfomed tests" -> {"(a_)?StringQ"}, 
-      "Position of failed argument(s)" -> {{1}}, "List of failed argument" -> {
+      "Perfomed tests" -> {"(a_)?StringQ"}, "reason of failure" -> 
+      "argument(s) which failed the test: a", 
+      "Position of failed argument(s)" -> {{1}}, "List of failed argument(s)" -> {
         Short[2, 3]}]],
     Editable->False,
     SelectWithContents->True,
     Selectable->False]}], "}"}]], "Output",
- CellChangeTimes->{3.735360666852521*^9, 3.7353692165850277`*^9},
- CellLabel->"Out[18]=",ExpressionUUID->"9693da44-23de-4d02-85dc-81e41eed2c32"]
+ CellChangeTimes->{3.735360666852521*^9, 3.7353692165850277`*^9, 
+  3.735380716702009*^9, 3.764647722652615*^9},
+ CellLabel->"Out[73]=",ExpressionUUID->"c0c326d4-3422-474e-8c28-0990772831f2"]
 }, Open  ]],
 
 Cell["\<\
@@ -832,12 +968,13 @@ Cell[BoxData[{
  RowBox[{"resetFailurelist", "[", 
   "]"}], "\[IndentingNewLine]", "failurelist"}], "Input",
  CellChangeTimes->{{3.735360742188755*^9, 3.7353607486803637`*^9}},
- CellLabel->"In[19]:=",ExpressionUUID->"f413e201-1d4d-4793-9714-c8c21cb33ac9"],
+ CellLabel->"In[74]:=",ExpressionUUID->"f413e201-1d4d-4793-9714-c8c21cb33ac9"],
 
 Cell[BoxData[
  RowBox[{"{", "}"}]], "Output",
- CellChangeTimes->{3.735360749262875*^9, 3.7353692166516123`*^9},
- CellLabel->"Out[20]=",ExpressionUUID->"4f5ce58e-8578-4af5-ad49-84e597963eb0"]
+ CellChangeTimes->{3.735360749262875*^9, 3.7353692166516123`*^9, 
+  3.735380716899005*^9, 3.764647722675249*^9},
+ CellLabel->"Out[75]=",ExpressionUUID->"e296f1cf-8fa2-4556-a660-a45f826902ff"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -882,12 +1019,12 @@ Cell[BoxData[{
  RowBox[{"test", "[", "\"\<a\>\"", "]"}], "\[IndentingNewLine]", 
  RowBox[{"test", "[", "\"\<wrong\>\"", "]"}]}], "Input",
  CellChangeTimes->{{3.735360836472756*^9, 3.735360908909749*^9}},
- CellLabel->"In[31]:=",ExpressionUUID->"435b9471-54c9-4694-afb6-0bf9f4681fcc"],
+ CellLabel->"In[76]:=",ExpressionUUID->"435b9471-54c9-4694-afb6-0bf9f4681fcc"],
 
 Cell[BoxData["\<\"a\"\>"], "Output",
  CellChangeTimes->{{3.735360899723845*^9, 3.7353609093888283`*^9}, 
-   3.735369875675644*^9},
- CellLabel->"Out[34]=",ExpressionUUID->"59af5d77-a60f-4209-b178-1b06935e1137"],
+   3.735369875675644*^9, 3.735380716953266*^9, 3.764647722743547*^9},
+ CellLabel->"Out[79]=",ExpressionUUID->"c653af11-12a1-4e54-941f-f676f4713c01"],
 
 Cell[BoxData[
  InterpretationBox[
@@ -907,12 +1044,14 @@ Cell[BoxData[
                  TagBox[
                   TemplateBox[{"\"reason\"", "\": \""}, "RowDefault"], 
                   "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox["\"wrong a\"", "SummaryItem"]}]}, {
+                 TagBox[
+                  TagBox["\"wrong a\"", HoldForm], "SummaryItem"]}]}, {
                RowBox[{
                  TagBox[
                   TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
                   "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox["test", "SummaryItem"]}]}}, 
+                 TagBox[
+                  TagBox["test", HoldForm], "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -935,12 +1074,14 @@ Cell[BoxData[
                  TagBox[
                   TemplateBox[{"\"reason\"", "\": \""}, "RowDefault"], 
                   "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox["\"wrong a\"", "SummaryItem"]}]}, {
+                 TagBox[
+                  TagBox["\"wrong a\"", HoldForm], "SummaryItem"]}]}, {
                RowBox[{
                  TagBox[
                   TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
                   "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox["test", "SummaryItem"]}]}}, 
+                 TagBox[
+                  TagBox["test", HoldForm], "SummaryItem"]}]}}, 
              GridBoxAlignment -> {
               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
              False, GridBoxItemSize -> {
@@ -962,254 +1103,97 @@ Cell[BoxData[
   SelectWithContents->True,
   Selectable->False]], "Output",
  CellChangeTimes->{{3.735360899723845*^9, 3.7353609093888283`*^9}, 
-   3.7353698756924458`*^9},
- CellLabel->"Out[35]=",ExpressionUUID->"912b5029-832a-4640-b3e3-c27acd1258ba"]
+   3.735369875675644*^9, 3.735380716953266*^9, 3.764647722746274*^9},
+ CellLabel->"Out[80]=",ExpressionUUID->"3193fce9-34de-4c31-907b-64d71c93661a"]
 }, Open  ]],
 
 Cell[CellGroupData[{
 
 Cell[BoxData["failurelist"], "Input",
  CellChangeTimes->{{3.735360916424128*^9, 3.735360927398876*^9}},
- CellLabel->"In[36]:=",ExpressionUUID->"554d50bf-dcbb-42f3-89fd-68702a5652c6"],
+ CellLabel->"In[81]:=",ExpressionUUID->"554d50bf-dcbb-42f3-89fd-68702a5652c6"],
 
 Cell[BoxData[
  RowBox[{"{", 
-  RowBox[{
-   InterpretationBox[
-    RowBox[{
-     TagBox["Failure",
-      "SummaryHead"], "[", 
-     DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
-      "Ready"}, 
-      TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
-              PaneBox[
-               ButtonBox[
-                DynamicBox[
-                 FEPrivate`FrontEndResource[
-                 "FEBitmaps", "SquarePlusIconMedium"]], 
-                ButtonFunction :> (Typeset`open$$ = True), Appearance -> None,
-                 Evaluator -> Automatic, Method -> "Preemptive"], 
-               Alignment -> {Center, Center}, ImageSize -> 
-               Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
-              FrameBox[
-               StyleBox["\"\[WarningSign]\"", 
-                Directive["Message", 35], StripOnInput -> False], 
-               ContentPadding -> False, FrameStyle -> None, 
-               FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
-              GridBox[{{
-                 RowBox[{
-                   TagBox[
-                    
-                    TemplateBox[{"\"reason of failure\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["\"not enough arguments\"", "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    
-                    TemplateBox[{"\"number of given arguments\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["0", "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                   TagBox["test", "SummaryItem"]}]}}, 
-               GridBoxAlignment -> {
-                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-               False, GridBoxItemSize -> {
-                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-               GridBoxSpacings -> {
-                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-               BaseStyle -> {
-                ShowStringCharacters -> False, NumberMarks -> False, 
-                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-            GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-            GridBoxItemSize -> {
-             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-            BaselinePosition -> {1, 1}], True -> GridBox[{{
-              PaneBox[
-               ButtonBox[
-                DynamicBox[
-                 FEPrivate`FrontEndResource[
-                 "FEBitmaps", "SquareMinusIconMedium"]], 
-                ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
-                None, Evaluator -> Automatic, Method -> "Preemptive"], 
-               Alignment -> {Center, Center}, ImageSize -> 
-               Dynamic[{
-                 Automatic, 3.5 CurrentValue["FontCapHeight"]/
-                  AbsoluteCurrentValue[Magnification]}]], 
-              FrameBox[
-               StyleBox["\"\[WarningSign]\"", 
-                Directive["Message", 35], StripOnInput -> False], 
-               ContentPadding -> False, FrameStyle -> None, 
-               FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
-              GridBox[{{
-                 RowBox[{
-                   TagBox[
-                    
-                    TemplateBox[{"\"reason of failure\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["\"not enough arguments\"", "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    
-                    TemplateBox[{"\"number of given arguments\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["0", "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                   TagBox["test", "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    
-                    TemplateBox[{
-                    "\"expected number of arguments\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["1", "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    
-                    TemplateBox[{"\"Heads of given arguments\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                    RowBox[{"{", "}"}], "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    
-                    TemplateBox[{"\"Perfomed tests\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                    RowBox[{"{", "\"(a_)?StringQ\"", "}"}], 
-                    "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    
-                    TemplateBox[{
-                    "\"Position of failed argument(s)\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                    RowBox[{"Missing", "[", "]"}], "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    
-                    TemplateBox[{"\"List of failed argument\"", "\": \""}, 
-                    "RowDefault"], "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                    RowBox[{"Missing", "[", "]"}], "SummaryItem"]}]}}, 
-               GridBoxAlignment -> {
-                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-               False, GridBoxItemSize -> {
-                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-               GridBoxSpacings -> {
-                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-               BaseStyle -> {
-                ShowStringCharacters -> False, NumberMarks -> False, 
-                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-            GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-            GridBoxItemSize -> {
-             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-            BaselinePosition -> {1, 1}]}, 
-         Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-       "SummaryPanel"],
-      DynamicModuleValues:>{}], "]"}],
-    Failure[$CellContext`test, 
-     Association[
-     "reason of failure" -> "not enough arguments", 
-      "number of given arguments" -> 0, "expected number of arguments" -> 1, 
-      "Heads of given arguments" -> {}, "Perfomed tests" -> {"(a_)?StringQ"}, 
-      "Position of failed argument(s)" -> Missing[], 
-      "List of failed argument" -> Missing[]]],
-    Editable->False,
-    SelectWithContents->True,
-    Selectable->False], ",", 
-   InterpretationBox[
-    RowBox[{
-     TagBox["Failure",
-      "SummaryHead"], "[", 
-     DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = 
-      "Ready"}, 
-      TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
-              FrameBox[
-               StyleBox["\"\[WarningSign]\"", 
-                Directive["Message", 35], StripOnInput -> False], 
-               ContentPadding -> False, FrameStyle -> None, 
-               FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
-              GridBox[{{
-                 RowBox[{
-                   TagBox[
-                    TemplateBox[{"\"reason\"", "\": \""}, "RowDefault"], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                   TagBox["\"wrong a\"", "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                   TagBox["test", "SummaryItem"]}]}}, 
-               GridBoxAlignment -> {
-                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-               False, GridBoxItemSize -> {
-                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-               GridBoxSpacings -> {
-                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-               BaseStyle -> {
-                ShowStringCharacters -> False, NumberMarks -> False, 
-                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-            GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-            GridBoxItemSize -> {
-             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-            BaselinePosition -> {1, 1}], True -> GridBox[{{
-              FrameBox[
-               StyleBox["\"\[WarningSign]\"", 
-                Directive["Message", 35], StripOnInput -> False], 
-               ContentPadding -> False, FrameStyle -> None, 
-               FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
-              GridBox[{{
-                 RowBox[{
-                   TagBox[
-                    TemplateBox[{"\"reason\"", "\": \""}, "RowDefault"], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                   TagBox["\"wrong a\"", "SummaryItem"]}]}, {
-                 RowBox[{
-                   TagBox[
-                    TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
-                    "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                   TagBox["test", "SummaryItem"]}]}}, 
-               GridBoxAlignment -> {
-                "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-               False, GridBoxItemSize -> {
-                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-               GridBoxSpacings -> {
-                "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-               BaseStyle -> {
-                ShowStringCharacters -> False, NumberMarks -> False, 
-                 PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-            GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
-            GridBoxItemSize -> {
-             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-            BaselinePosition -> {1, 1}]}, 
-         Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-       "SummaryPanel"],
-      DynamicModuleValues:>{}], "]"}],
-    Failure[$CellContext`test, 
-     Association["reason" -> "wrong a"]],
-    Editable->False,
-    SelectWithContents->True,
-    Selectable->False]}], "}"}]], "Output",
- CellChangeTimes->{3.735360929461913*^9, 3.7353698757863693`*^9},
- CellLabel->"Out[36]=",ExpressionUUID->"7574ff6b-b765-4f1b-b84e-b03621990a8c"]
+  InterpretationBox[
+   RowBox[{
+    TagBox["Failure",
+     "SummaryHead"], "[", 
+    DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
+     TemplateBox[{PaneSelectorBox[{False -> GridBox[{{
+             FrameBox[
+              StyleBox["\"\[WarningSign]\"", 
+               Directive["Message", 35], StripOnInput -> False], 
+              ContentPadding -> False, FrameStyle -> None, 
+              FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+             GridBox[{{
+                RowBox[{
+                  TagBox[
+                   TemplateBox[{"\"reason\"", "\": \""}, "RowDefault"], 
+                   "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                  TagBox[
+                   TagBox["\"wrong a\"", HoldForm], "SummaryItem"]}]}, {
+                RowBox[{
+                  TagBox[
+                   TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
+                   "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                  TagBox[
+                   TagBox["test", HoldForm], "SummaryItem"]}]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+              False, GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              GridBoxSpacings -> {
+               "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+              BaseStyle -> {
+               ShowStringCharacters -> False, NumberMarks -> False, 
+                PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+           GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+           BaselinePosition -> {1, 1}], True -> GridBox[{{
+             FrameBox[
+              StyleBox["\"\[WarningSign]\"", 
+               Directive["Message", 35], StripOnInput -> False], 
+              ContentPadding -> False, FrameStyle -> None, 
+              FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
+             GridBox[{{
+                RowBox[{
+                  TagBox[
+                   TemplateBox[{"\"reason\"", "\": \""}, "RowDefault"], 
+                   "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                  TagBox[
+                   TagBox["\"wrong a\"", HoldForm], "SummaryItem"]}]}, {
+                RowBox[{
+                  TagBox[
+                   TemplateBox[{"\"Tag\"", "\": \""}, "RowDefault"], 
+                   "SummaryItemAnnotation"], "\[InvisibleSpace]", 
+                  TagBox[
+                   TagBox["test", HoldForm], "SummaryItem"]}]}}, 
+              GridBoxAlignment -> {
+               "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
+              False, GridBoxItemSize -> {
+               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+              GridBoxSpacings -> {
+               "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+              BaseStyle -> {
+               ShowStringCharacters -> False, NumberMarks -> False, 
+                PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+           GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False, 
+           GridBoxItemSize -> {
+            "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+           BaselinePosition -> {1, 1}]}, 
+        Dynamic[Typeset`open$$], ImageSize -> Automatic]},
+      "SummaryPanel"],
+     DynamicModuleValues:>{}], "]"}],
+   Failure[$CellContext`test, 
+    Association["reason" -> "wrong a"]],
+   Editable->False,
+   SelectWithContents->True,
+   Selectable->False], "}"}]], "Output",
+ CellChangeTimes->{3.735360929461913*^9, 3.7353698757863693`*^9, 
+  3.735380717014003*^9, 3.764647722765324*^9},
+ CellLabel->"Out[81]=",ExpressionUUID->"4698cfec-99ec-4d4b-ba3b-5f46e33757c4"]
 }, Open  ]],
 
 Cell["", "Text",ExpressionUUID->"54938e83-0b71-4a9e-9f79-5036da2c1a5e"],
@@ -1227,18 +1211,18 @@ Cell[BoxData[
  RowBox[{"FailureQ", "@", 
   RowBox[{"test", "[", "\"\<wrong\>\"", "]"}]}]], "Input",
  CellChangeTimes->{{3.735369856793906*^9, 3.735369866586114*^9}},
- CellLabel->"In[37]:=",ExpressionUUID->"186e012a-4a19-44ed-937e-f8695afc9e49"],
+ CellLabel->"In[82]:=",ExpressionUUID->"186e012a-4a19-44ed-937e-f8695afc9e49"],
 
 Cell[BoxData["True"], "Output",
- CellChangeTimes->{{3.735369867410387*^9, 3.735369875894285*^9}},
- CellLabel->"Out[37]=",ExpressionUUID->"e512550c-b8f3-4dfc-acab-c858aa380b6a"]
+ CellChangeTimes->{{3.735369867410387*^9, 3.735369875894285*^9}, 
+   3.735380717081311*^9, 3.7646477228163767`*^9},
+ CellLabel->"Out[82]=",ExpressionUUID->"41833cbf-3744-4251-99df-ab72f01a7dba"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{808, 911},
-WindowMargins->{{4, Automatic}, {Automatic, 4}},
-FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
-2018)",
+WindowSize->{808, 751},
+WindowMargins->{{4, Automatic}, {Automatic, 0}},
+FrontEndVersion->"12.0 for Mac OS X x86 (64-bit) (April 8, 2019)",
 StyleDefinitions->"Default.nb"
 ]
 (* End of Notebook Content *)
@@ -1254,63 +1238,63 @@ CellTagsIndex->{}
 Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 164, 3, 67, "Section",ExpressionUUID->"8d1a16c0-32f7-4dfc-a604-e823b9f3a4bb"],
-Cell[747, 27, 259, 6, 58, "Text",ExpressionUUID->"e1909321-caa2-4723-8dc0-55d7a1b3bad1"],
-Cell[1009, 35, 284, 4, 30, "Input",ExpressionUUID->"90f553de-8fbf-48e9-bf4f-5117913624b7"],
+Cell[747, 27, 314, 7, 58, "Text",ExpressionUUID->"e1909321-caa2-4723-8dc0-55d7a1b3bad1"],
+Cell[1064, 36, 285, 4, 30, "Input",ExpressionUUID->"90f553de-8fbf-48e9-bf4f-5117913624b7"],
 Cell[CellGroupData[{
-Cell[1318, 43, 259, 3, 54, "Subsection",ExpressionUUID->"cf47cc02-831b-4af2-93d3-1c6a23c57d55",
+Cell[1374, 44, 259, 3, 54, "Subsection",ExpressionUUID->"cf47cc02-831b-4af2-93d3-1c6a23c57d55",
  CellID->1894946023],
 Cell[CellGroupData[{
-Cell[1602, 50, 626, 16, 94, "Input",ExpressionUUID->"43fa0004-f23d-4d02-8183-91fc65458458",
+Cell[1658, 51, 626, 16, 94, "Input",ExpressionUUID->"43fa0004-f23d-4d02-8183-91fc65458458",
  CellID->1155417659],
-Cell[2231, 68, 7428, 159, 151, "Output",ExpressionUUID->"043377ad-37f5-4e62-97b0-0aeade460254"]
+Cell[2287, 69, 7953, 175, 76, "Output",ExpressionUUID->"cbfac78b-bc21-4394-9e0b-a340e86ddee7"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9708, 233, 186, 3, 54, "Subsection",ExpressionUUID->"57a38f7e-83b7-4221-baaf-5453355b7698"],
+Cell[10289, 250, 186, 3, 54, "Subsection",ExpressionUUID->"57a38f7e-83b7-4221-baaf-5453355b7698"],
 Cell[CellGroupData[{
-Cell[9919, 240, 612, 15, 94, "Input",ExpressionUUID->"de05e7ac-2cd5-4232-afcb-d02c3ba0e2db"],
-Cell[10534, 257, 7427, 164, 79, "Output",ExpressionUUID->"d111d64e-52cd-452a-8473-160dee9460ff"]
+Cell[10500, 257, 612, 15, 94, "Input",ExpressionUUID->"de05e7ac-2cd5-4232-afcb-d02c3ba0e2db"],
+Cell[11115, 274, 7892, 177, 76, "Output",ExpressionUUID->"44c26625-113a-4507-a856-3a4817eb3a10"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18010, 427, 188, 3, 54, "Subsection",ExpressionUUID->"cc639c84-614d-46d9-9e1c-0751810a3fd5"],
-Cell[18201, 432, 201, 3, 35, "Text",ExpressionUUID->"f0ab0783-6061-430b-9944-94c7196b458b"],
+Cell[19056, 457, 188, 3, 54, "Subsection",ExpressionUUID->"cc639c84-614d-46d9-9e1c-0751810a3fd5"],
+Cell[19247, 462, 201, 3, 35, "Text",ExpressionUUID->"f0ab0783-6061-430b-9944-94c7196b458b"],
 Cell[CellGroupData[{
-Cell[18427, 439, 673, 16, 94, "Input",ExpressionUUID->"df2ea9b8-f91c-4a74-b53d-b934628829d8"],
-Cell[19103, 457, 222, 3, 34, "Output",ExpressionUUID->"8928a246-43b5-4b46-999b-b15b3c971c1c"]
+Cell[19473, 469, 673, 16, 94, "Input",ExpressionUUID->"df2ea9b8-f91c-4a74-b53d-b934628829d8"],
+Cell[20149, 487, 269, 4, 34, "Output",ExpressionUUID->"791491a1-0641-431d-844e-3e29f10bd313"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19374, 466, 179, 3, 54, "Subsection",ExpressionUUID->"88ed409c-4598-42b7-be88-ef7e7f87febd"],
-Cell[19556, 471, 247, 7, 58, "Text",ExpressionUUID->"6bfb63f1-b4b5-4253-9bd4-6b0d83dc441e"],
+Cell[20467, 497, 179, 3, 54, "Subsection",ExpressionUUID->"88ed409c-4598-42b7-be88-ef7e7f87febd"],
+Cell[20649, 502, 247, 7, 58, "Text",ExpressionUUID->"6bfb63f1-b4b5-4253-9bd4-6b0d83dc441e"],
 Cell[CellGroupData[{
-Cell[19828, 482, 184, 2, 30, "Input",ExpressionUUID->"bad1ed76-07f5-42cd-9b9b-60d77c9656f8"],
-Cell[20015, 486, 15330, 332, 153, "Output",ExpressionUUID->"9693da44-23de-4d02-85dc-81e41eed2c32"]
+Cell[20921, 513, 184, 2, 30, "Input",ExpressionUUID->"bad1ed76-07f5-42cd-9b9b-60d77c9656f8"],
+Cell[21108, 517, 19999, 437, 148, "Output",ExpressionUUID->"c0c326d4-3422-474e-8c28-0990772831f2"]
 }, Open  ]],
-Cell[35360, 821, 212, 5, 35, "Text",ExpressionUUID->"d5476b56-1408-48c8-92fe-edd78f39f860"],
+Cell[41122, 957, 212, 5, 35, "Text",ExpressionUUID->"d5476b56-1408-48c8-92fe-edd78f39f860"],
 Cell[CellGroupData[{
-Cell[35597, 830, 254, 4, 52, "Input",ExpressionUUID->"f413e201-1d4d-4793-9714-c8c21cb33ac9"],
-Cell[35854, 836, 190, 3, 34, "Output",ExpressionUUID->"4f5ce58e-8578-4af5-ad49-84e597963eb0"]
+Cell[41359, 966, 254, 4, 52, "Input",ExpressionUUID->"f413e201-1d4d-4793-9714-c8c21cb33ac9"],
+Cell[41616, 972, 237, 4, 34, "Output",ExpressionUUID->"e296f1cf-8fa2-4556-a660-a45f826902ff"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[36105, 846, 157, 3, 67, "Section",ExpressionUUID->"59d48d09-a969-48c4-a361-056e564617b6"],
-Cell[36265, 851, 253, 6, 35, "Text",ExpressionUUID->"6644eacf-53f2-49b1-94b2-6ef4d7d31c04"],
+Cell[41914, 983, 157, 3, 67, "Section",ExpressionUUID->"59d48d09-a969-48c4-a361-056e564617b6"],
+Cell[42074, 988, 253, 6, 35, "Text",ExpressionUUID->"6644eacf-53f2-49b1-94b2-6ef4d7d31c04"],
 Cell[CellGroupData[{
-Cell[36543, 861, 961, 23, 115, "Input",ExpressionUUID->"435b9471-54c9-4694-afb6-0bf9f4681fcc"],
-Cell[37507, 886, 209, 3, 34, "Output",ExpressionUUID->"59af5d77-a60f-4209-b178-1b06935e1137"],
-Cell[37719, 891, 3584, 74, 64, "Output",ExpressionUUID->"912b5029-832a-4640-b3e3-c27acd1258ba"]
+Cell[42352, 998, 961, 23, 115, "Input",ExpressionUUID->"435b9471-54c9-4694-afb6-0bf9f4681fcc"],
+Cell[43316, 1023, 253, 3, 34, "Output",ExpressionUUID->"c653af11-12a1-4e54-941f-f676f4713c01"],
+Cell[43572, 1028, 3774, 78, 62, "Output",ExpressionUUID->"3193fce9-34de-4c31-907b-64d71c93661a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[41340, 970, 182, 2, 30, "Input",ExpressionUUID->"554d50bf-dcbb-42f3-89fd-68702a5652c6"],
-Cell[41525, 974, 11208, 237, 78, "Output",ExpressionUUID->"7574ff6b-b765-4f1b-b84e-b03621990a8c"]
+Cell[47383, 1111, 182, 2, 30, "Input",ExpressionUUID->"554d50bf-dcbb-42f3-89fd-68702a5652c6"],
+Cell[47568, 1115, 3872, 80, 62, "Output",ExpressionUUID->"4698cfec-99ec-4d4b-ba3b-5f46e33757c4"]
 }, Open  ]],
-Cell[52748, 1214, 71, 0, 35, "Text",ExpressionUUID->"54938e83-0b71-4a9e-9f79-5036da2c1a5e"],
-Cell[52822, 1216, 211, 5, 35, "Text",ExpressionUUID->"7236c5a3-121f-46ca-890b-6df5e37b9d92"],
+Cell[51455, 1198, 71, 0, 35, "Text",ExpressionUUID->"54938e83-0b71-4a9e-9f79-5036da2c1a5e"],
+Cell[51529, 1200, 211, 5, 35, "Text",ExpressionUUID->"7236c5a3-121f-46ca-890b-6df5e37b9d92"],
 Cell[CellGroupData[{
-Cell[53058, 1225, 244, 4, 30, "Input",ExpressionUUID->"186e012a-4a19-44ed-937e-f8695afc9e49"],
-Cell[53305, 1231, 176, 2, 68, "Output",ExpressionUUID->"e512550c-b8f3-4dfc-acab-c858aa380b6a"]
+Cell[51765, 1209, 244, 4, 30, "Input",ExpressionUUID->"186e012a-4a19-44ed-937e-f8695afc9e49"],
+Cell[52012, 1215, 226, 3, 68, "Output",ExpressionUUID->"41833cbf-3744-4251-99df-ab72f01a7dba"]
 }, Open  ]]
 }, Open  ]]
 }
