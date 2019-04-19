@@ -16,6 +16,8 @@ I was looking for a better solution which gives me more feedback and makes debug
 In version 10 the FailureObject has been introduced, and the Function FailureQ has been added in version 10.2.
 The FailureObject is not often used in the internal function but I think it is ideal for error handling.
 
+The package is compatible and tested with version 12.
+
 ## Installation
 
 In Mathematica go to File > Install ... and install the package.
