@@ -163,7 +163,7 @@ BeginPackage["functionArgumentFailure`"];
 (*setFailure*)
 
 
-  (* Define the Failuure Object and add it to the failurelist*)
+  (* Define the Failure Object and add it to the failurelist*)
   setFailure[function_Symbol, failures_?AssociationQ] := Module[{failure},
 
     failure = Failure[function, failures];
